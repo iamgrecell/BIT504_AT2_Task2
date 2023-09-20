@@ -1,5 +1,4 @@
 import java.awt.*;
-import 
 
 public class Board {
 	// grid line width
@@ -14,7 +13,7 @@ public class Board {
 	public Board() {
 		
 	 //TODO: initialise the cells array using ROWS and COLS constants 
-		Cell [row][col] = new cell(row, col);
+
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
@@ -44,8 +43,7 @@ public class Board {
 		
 		 // TODO: Check if the player has 3 in the playerCol.
 		 // Hint: Use the row code above as a starting point, remember that it goes cells[row][column] 
-		if(cells[playerCol][0].content == thePlayer && cells[playerCol][1].content == thePlayer && cells[playerCol][2].content == thePlayer )
-			return true; 
+		
 		
 		
 		 // 3-in-the-diagonal
@@ -54,8 +52,6 @@ public class Board {
 		 
 		
 		// TODO: Check the diagonal in the other direction
-		if( cells[2][2].content == thePlayer && cells[1][1].content == thePlayer && cells[0][0].content == thePlayer)
-			return true;
 		
 
 		
