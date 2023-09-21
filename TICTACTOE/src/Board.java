@@ -61,7 +61,7 @@ public class Board {
 		 
 		
 		// TODO: Check the diagonal in the other direction
-		if( cells[2][2].content == thePlayer && cells[1][1].content == thePlayer && cells[0][0].content == thePlayer)
+		if( cells[0][2].content == thePlayer && cells[1][1].content == thePlayer && cells[2][0].content == thePlayer)
 			return true; //checked if player has 3 in the other direction of the diagonal starting from Column 3(index2) up to Column 1(index 0)
 		
 		//no winner, keep playing
